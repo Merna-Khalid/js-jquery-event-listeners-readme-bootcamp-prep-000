@@ -10,6 +10,21 @@ function frameIt() {
     $('img').addClass('tasty')
   });
 }
+
+function pressIt() {
+  $('#typing').on('keydown', function(key) {
+    if (key.which === 'G') {
+      alert('G')
+    }
+  });
+}
+
+function submitIt() {
+  $('form').on('submit', function() {
+    alert("Your form is going to be submitted now.")
+  });
+}
+
 $(document).ready(function(){
 
 // call functions here
